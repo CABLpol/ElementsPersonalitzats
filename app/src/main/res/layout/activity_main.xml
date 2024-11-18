@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <dam2.m08.elementspersonalitzats.DontEndWith0EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:hint="Numero no acabat amb 0"/>
+        <dam2.m08.elementspersonalitzats.DniValidatorView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:textError="Introdueix un DNI vàlid"
+            app:underlineErrorColor="@color/red"
+            app:underlineSuccessColor="@color/green"/>
+    </LinearLayout>
+</LinearLayout>
